@@ -1,0 +1,10 @@
+{
+  "devToolsPort": 19003,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 23368,
+  "expoServerNgrokUrl": "https://fv-szc.anonymous.finalproject.exp.direct",
+  "packagerNgrokUrl": "https://packager.fv-szc.anonymous.finalproject.exp.direct",
+  "ngrokPid": 34376,
+  "webpackServerPort": null
+}

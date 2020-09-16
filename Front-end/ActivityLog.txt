@@ -1,0 +1,56 @@
+May 7th 2020
+1:30 pm - Working on general set up, creating my navigation and screens etc. 
+3:00 pm - Trying to figure out how to use NativeBase UI kit. This is the most confusing thing I've learned in the entire MSD program. Why make a UI kit just to make life harder? 
+3:30 pm - Considering not using a UI kit and using the perfectly designed vanilla react-native styling, and taking the grade cut. W H Y. Are these UI kits so hard to use?
+4:40 pm - Professor suggested using the react-native-elements UI kit. It's much easier than the others. Their documentation is not the best though. Still struggling.
+5:20 pm - Professor just told me not to worry about the aesthetics so much and work with the simple default stuff provided from this kit. Time to code!
+5:45 pm - Finished the login page, beginning backend. 
+10:00 pm - Frontend to backend communication is adequately set up. Sleep time.
+
+May 8th
+10 am - Beginning jwt handling.
+Noon - Jwt almost complete. Must create authentication middleware. Will do after creating more frontend screens.
+1:30 - Having to deal with passing the token from app.js using context and reducers. I am completely confused.
+2:30 - Stuck trying to understand the reducer.. I am more lost than I originally anticipated I would be. 
+4:30 - Took a break from the madness. I am chipping away at this issue now. 
+6:20 - Pretty much have got nothing done. UseContext does not work and I don't know what to do.
+8:20 - I've got the jist of using context and the reducer. Now, the navigation isn't working properly
+	something to do with the ternary operator that handles the state of the token and which screens are available.
+	Professor suggested I conclude programming for the night, I will do so. 
+May 9th
+6:30 - I forgot to log. I haven't completed much. I think I figured out the token? I'm actually more lost than I've ever been.
+	I don't know what the project is actually asking for. 
+12:15 - location wasn't working for a while. I figured it out, I'm now implementing the map. It's coming together
+	My code looks so strange. Please forgive me professor, I'm trying my hardest.I'm pushing 12 - 14 hour days here now.
+
+May 11th - I forgot to log again. Yesterday I was working on the map, and got it to work. I also began on SMS.
+	I completed SMS at around noon today, easier than I thought.\
+5pm - I finished fetching users that are in a one mile proximity. That was challenging, but a very good experience.
+
+6:30 - I currently have NO get requests. Because I treated all get requests as POSTS so I could send the token in the body.
+	amateur mistake. Gotta fix this.
+8:30 - Fixed it all. I took a break, I could have cleaned it up sooner.
+
+9:00 - Cleaned up the code, cleaned up the screen titles so it doesn't say MAIN_HOME and rather just Home
+	Included a Navbar on every screen with a home and logout button. 
+
+	Project Feels done to me. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

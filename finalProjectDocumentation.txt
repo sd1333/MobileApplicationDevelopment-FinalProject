@@ -1,0 +1,61 @@
+
+Front-End// //
+App.js//
+My application begins with App.js. Within App.js, we are basically creating our navigation container and 
+creating a reducer state to be used by many components within the component tree. I made a 
+context for the dispatch action types here to perform this.
+
+The two screens that do not require a token are the login and signup pages. I used a ternary
+operator to accomplish this. If token exists, access to login and signup is available. Otherwise,
+the other ones are not available.
+
+Login Signup //
+Our login page consists of two simple controlled inputs and a submit button that sends the values
+from the state to the back end, for authentication. Once that happens successfully, they get
+navigated to the Home page. The Sign-up page is similar to the Login page in structure. 
+
+Home page//
+Once on the home page, the UI will display two buttons. One to toggle the user's volunteer status to 
+true or false. There is also some text that gives a visual indicator of what their current status is.
+The second button directs the user to the map. 
+
+Map//
+Here on the map, we fetch up to 10 of the closest users that have their volunteer status to true 
+in a one mile radius to our current location which we obtain by the Location API. Each user's location
+is indicated by a marker. 
+
+VolunteerInfo//
+When the marker is clicked, a callout button pops up with the user's name.
+After clicking the marker, we get directed to the volunteer's info page with displays their name,
+number, email. We also have a controlled input field with a submit button which utilizes the SMS API.
+It takes the volunteers number and the message which is stored in the state to perform an SMS message.
+
+
+Back-End// //
+App.js //
+Our back-end app begins in App.js. App.js basically is where we connect to the database via mongoose.connect
+, configure our app, and define our routes. We are only using userRoutes for this project.
+
+userRoutes//
+in our userRoute we are handling how each request will get routed to its respective function in the
+controller. We also created our middleware here to handle JWT authentication.
+
+userController//
+To handle sign up we take all of the users info in the req.body. Prior to saving them in our database,
+We will encrypt the password using bcrypt.hash.
+
+To handle login, we take the request body and which is email and password. 
+Check with the database if the e-mail exists. If it does not exist, then we will will respond 
+with a user not found. if it does exist then we will compare their password with bcrypt.compare.
+If it passes, then we will use jwt.sign to send a signed token to the front end. They have access.
+
+
+Middleware//
+The authenticate middleware simply splits the token from 'Bearer' in the string, and analyzes the token
+by verifying it with our secret. When it passes, we just call next(). Otherwise, we respond with
+Authentication failed.
+
+
+
+
+

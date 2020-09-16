@@ -1,0 +1,19 @@
+POST http://localhost:7000/signup
+content-type: application/json
+
+{
+    "firstName": "Shawn" ,
+    "lastName": "Daudi",
+    "email" : "f",
+    "password": "hello"
+}
+
+###
+
+POST http://localhost:7000/login
+content-type: application/json
+
+{
+    "email" : "f",
+    "password": "hello"
+}

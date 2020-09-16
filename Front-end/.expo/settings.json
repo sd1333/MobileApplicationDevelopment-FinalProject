@@ -1,0 +1,8 @@
+{
+  "urlRandomness": "fv-szc",
+  "hostType": "tunnel",
+  "lanType": "ip",
+  "dev": true,
+  "minify": false,
+  "https": true
+}
